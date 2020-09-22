@@ -1,0 +1,5 @@
+#!/bin/sh
+[ -z "$1" ] && echo "usage: $0 PATH" 2>&1 && exit 1
+cat "$1" \
+  | docker run --rm -i ethereum/solc:0.5.13-alpine --ast-compact-json - \
+  | sed -e "1,/======= <stdin> =======/d"

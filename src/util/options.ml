@@ -37,7 +37,7 @@ let print_detector_activation_status () =
 
 let options =
   [
-    ("-input", Arg.String (fun s -> inputfile := s), "inputfile containing your examples");
+    ("-input", Arg.String (fun s -> inputfile := s), "inputfile containing compiled with `--ast-compact-json`");
     ("-main", Arg.String (fun s -> main_contract := s), "name of main contract to be deployed");
     ("-il", Arg.Set il, "show intermediate representations of original program");
     ("-cfg", Arg.Set cfg, "show control flow graph");

@@ -68,8 +68,6 @@ Note that, if `-main` option is not provided, VeriSmart will assume the last con
 
 Note that, in this case, `CONTRACT.sol` must be compiled with solc v.0.5.11,
 where the solc binary named `solc_0.5.11` should be located at the path identified by `which solc_0.5.11`.
-If the `-solc` option is not explicitly provided,
-VeriSmart will attempt to compile the source code with solc binary named `solc`, located at the path identified by `which solc`.
 
 ## Related Publications
 
